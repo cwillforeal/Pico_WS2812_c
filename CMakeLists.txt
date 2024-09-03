@@ -38,6 +38,7 @@ pico_enable_stdio_usb(WS2812_Example_C 1)
 target_link_libraries(WS2812_Example_C
         pico_stdlib
         pico_malloc
+        hardware_dma
 )
 
 # Add any user requested libraries

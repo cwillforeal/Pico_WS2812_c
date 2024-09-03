@@ -39,6 +39,7 @@ typedef struct
 	uint sm;
 	data_byte_t bytes[4];
 	color_t* data;
+	int dma_chan;
 } ws2812_t;
 
 void ws2812_initialize(ws2812_t* l, uint pin, uint length, PIO pio, uint sm, data_format_t format);
